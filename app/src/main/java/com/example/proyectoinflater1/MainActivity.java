@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this,"Se pulsó derecha",Toast.LENGTH_SHORT).show();
+                view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this,R.anim.fade_in));
+
             }
         });
 
