@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this,"Se pulsó el centro",Toast.LENGTH_SHORT).show();
+                view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this,R.anim.zoom_in));
+
             }
         });
         ivDerecha.setOnClickListener(new View.OnClickListener() {
